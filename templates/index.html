@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>INDEX</title>
+        <style>
+            * { margin:0; padding:10px; font-family:"Helvetica"; }
+            #header { text-align:center; width:50%; margin:0 auto; margin-top:100px; }
+            #_form { max-width:20%; margin:0 auto; margin-top:25px; }
+            @media only screen and (max-width: 1200px) {
+                #header { text-align:center; width:50%; margin:0 auto; margin-top:100px; }
+                #_form { max-width:40%; margin:0 auto; margin-top:25px; }
+            }
+            @media only screen and (max-width: 991px) {
+                #header { text-align:center; width:70%; margin:0 auto; margin-top:100px; }
+                #_form { max-width:60%; margin:0 auto; margin-top:25px; }
+            }
+            @media only screen and (max-width: 768px) {
+                #header { text-align:center; width:100%; margin:0 auto; margin-top:100px; }
+                #_form { max-width:80%; margin:0 auto; margin-top:25px; }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="header">
+            Sleep required to be active
+            <div style="margin-top:25px; font-size:18px; font-weight:normal;">This application is to check the number of hours of sleep a person requires for him/her to be active for the rest of the day</div>
+            <div style="margin-top:15px; font-size:16px; font-weight:normal; padding:10px; background:coral; border-radius:20px;">This is using Linear Regression to compute the result</div>
+        </h1>
+        <form method="get" action="/" id="_form">
+            <input type="text" value="Person: Tejas Gaware" style="width:100%; padding:10px; border:1px solid #e6e6e6; border-radius:10px;" disabled><br>
+            <input type="number" name="hours" min="1" max="12" placeholder="Enter number of hours of sleep" autocomplete="off" style="width:100%; margin-top:10px; padding:10px; border:1px solid #e6e6e6; border-radius:10px; outline:none;" required><br>
+            <button type="submit" style="margin-top:10px; font-size:12px; padding:7px; background:orange; color:#000; border:1px solid #ffcc00; border-radius:5px; cursor:pointer;"><b>Submit</b></button>
+        </form>
+        {{ message }}
+    </body>
+</html>

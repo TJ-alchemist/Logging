@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SUCCESS</title>
+        <style>
+            * { margin:0; padding:10px; font-family:"Helvetica"; }
+            #result { text-align:center; width:50%; margin:0 auto; margin-top:100px; }
+            @media only screen and (max-width: 1200px) {
+                #result { text-align:center; width:50%; margin:0 auto; margin-top:100px; }
+            }
+            @media only screen and (max-width: 991px) {
+                #result { text-align:center; width:70%; margin:0 auto; margin-top:100px; }
+            }
+            @media only screen and (max-width: 768px) {
+                #result { text-align:center; width:100%; margin:0 auto; margin-top:100px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="result">
+            <h1>Analysis</h1>
+            <a href="/"><b>RESET</b></a>
+            <br><br>
+            Tejas Gaware will be active:
+            <div style="margin-top:25px; font-size:18px; font-weight:normal; padding:10px; background:#99cc00; border-radius:20px;">For <b><u>{{ result }}</u></b> hours if he receives <b><u>{{ original }}</u></b> hours of sleep</div>
+            <div style="margin-top:25px; font-size:18px;">***** End ******</div>
+        </div>
+    </body>
+</html>
